@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #141313;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+main {
+    width: 60%;
+    margin: 0 auto;
+}
+ul li {
+    background-color: rgb(74, 74, 74);
+}
+.box-shadow {
+    box-shadow: 0px 0px 5px #ffffff;
+}
+
+.header {
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.container {
+    margin: 20px 0;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px #000;
+}
+
+.container p {
+    font-size: 20px;
+}
+
+.edit,
+.del {
+    width: 30px;
+    cursor: pointer;
+}
+
+.not-completed {
+    text-decoration: line-through;
+}
+
+#wait {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 35px;
+}
+
+#form-add {
+    display: flex;
+    margin-top: 20px;
+    flex-flow: row wrap;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 2px #333;
+    justify-content: space-between;
+    width: 80%;
+}
+
+#form-add input {
+    border: none;
+    flex-grow: 1;
+    font-size: 15px;
+    padding: 5px;
+    flex-basis: 150px;
+}
+
+#form-add #agregar {
+    background-color: rgb(32, 118, 193);
+    color: white;
+    cursor: pointer;
+}
+
+#form-add #input-name {
+    flex-grow: 5;
+}
+
+#input-name:focus {
+    border: none;
+    outline: none;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+
+#modal-edit {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    color: #000;
+}
+.modal-content {
+    width: 50%;
+    min-width: 300px;
+    box-shadow: 0px 0px 5px black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 3px;
+}
+#modal-edit .modal-content > div {
+    margin-bottom: 10px;
+}
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+}
+.modal-header h4, .modal-header button{
+    font-size: 30px;
+}
+.modal-header button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+.modal-body input {
+    padding: 5px;
+    font-size: 18px;
+}
+
+.modal-body input:focus {
+    outline: none;
+}
+
+.modal-body input[type='text'] {
+    border: none;
+    min-width: 70%;
+    border-radius: 0;
+    box-shadow: 0px 0px 3px #777;
+}
+
+.modal-body input[type='checkbox']{
+    width: 30px;
+    height: 30px;
+    border: none;
+
+}
+input[type="checkbox"]:checked {
+    background-color: lightgreen;
+}
+.modal-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body .modal-inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#modal-save {
+    width: 100%;
+    background-color: rgb(32, 118, 193);
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    margin-top: 10px;
+}
